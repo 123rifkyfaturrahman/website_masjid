@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel Maju Jaya | Solusi Otomotif Terpercaya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Bengkel<span>Maju</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#pricing">Harga</a></li>
+            <li><a href="#booking">Booking</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Solusi Cerdas Kendaraan Anda</h1>
+            <p>Mulai dari servis rutin hingga perbaikan berat dengan mekanik bersertifikat.</p>
+            <a href="#booking" class="btn">Booking Sekarang</a>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Layanan Utama</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <i class="fas fa-oil-can"></i>
+                <h3>Ganti Oli</h3>
+                <p>Oli berkualitas untuk menjaga keawetan mesin kendaraan Anda.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Tune Up</h3>
+                <p>Optimasi performa mesin agar kembali seperti baru.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car-battery"></i>
+                <h3>Cek Kelistrikan</h3>
+                <p>Pemeriksaan aki dan sistem kelistrikan secara menyeluruh.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Hasil Kerja Kami</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="mesin">Mesin</button>
+            <button class="filter-btn" data-filter="body">Body</button>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-item mesin">
+                <img src="https://images.unsplash.com/photo-1487754180451-c456f719c141?w=400" alt="Servis Mesin">
+            </div>
+            <div class="gallery-item body">
+                <img src="https://images.unsplash.com/photo-1517524008697-84bef82b8202?w=400" alt="Perbaikan Body">
+            </div>
+            <div class="gallery-item mesin">
+                <img src="https://images.unsplash.com/photo-1632733711679-5292d6676100?w=400" alt="Tune Up">
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Daftar Harga</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Layanan</th>
+                        <th>Estimasi Waktu</th>
+                        <th>Harga Mulai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ganti Oli</td>
+                        <td>30 Menit</td>
+                        <td>Rp 150.000</td>
+                    </tr>
+                    <tr>
+                        <td>Tune Up Injeksi</td>
+                        <td>90 Menit</td>
+                        <td>Rp 350.000</td>
+                    </tr>
+                    <tr>
+                        <td>Service Rem</td>
+                        <td>60 Menit</td>
+                        <td>Rp 200.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="flex-container">
+            <div class="booking-form">
+                <h2>Booking Jadwal</h2>
+                <form id="bookingForm">
+                    <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                    <input type="text" id="kendaraan" placeholder="Model Kendaraan" required>
+                    <input type="date" id="tanggal" required>
+                    <button type="submit" class="btn-submit">Kirim Jadwal</button>
+                </form>
+                <div id="responseMessage"></div>
+            </div>
+            <div class="map-area">
+                <h2>Lokasi Kami</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.96347101867!2d106.78912!3d-6.21462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e16724587f%3A0x2ad1ad36f1659223!2sJakarta%20Pusat!5e0!3m2!1sid!2sid!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bengkel Maju Jaya. Jl. Otomotif No. 123.</p>
+    </footer>
+
+    <a href="https://wa.me/628123456789" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Tanya Mekanik</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

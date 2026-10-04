@@ -1,0 +1,152 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body { scroll-behavior: smooth; overflow-x: hidden; color: #333; }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #1a1a1a;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo span { color: #ff6600; font-weight: bold; }
+
+.nav-links { display: flex; list-style: none; }
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover { color: #ff6600; }
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1500');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Sections General */
+section { padding: 80px 5%; text-align: center; }
+
+/* Services */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.service-card {
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-card i { font-size: 3rem; color: #ff6600; margin-bottom: 15px; }
+
+/* Gallery */
+.filter-btn {
+    padding: 8px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn.active { background: #ff6600; color: white; }
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery-item { width: 300px; height: 200px; border-radius: 8px; overflow: hidden; }
+
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Table */
+.table-container { margin-top: 30px; overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+
+table th, table td { padding: 15px; border: 1px solid #ddd; text-align: left; }
+
+table th { background: #222; color: white; }
+
+/* Booking & Map Flex */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.booking-form, .map-area { flex: 1; min-width: 300px; }
+
+form { display: flex; flex-direction: column; }
+
+form input { padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+.btn-submit { background: #222; color: white; padding: 12px; border: none; cursor: pointer; border-radius: 5px; }
+
+/* WhatsApp Floating */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Animations */
+.fade-in { opacity: 0; transform: translateY(30px); transition: 0.8s all ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+footer { background: #1a1a1a; color: white; padding: 20px; margin-top: 50px; }
